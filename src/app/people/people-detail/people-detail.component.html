@@ -1,0 +1,16 @@
+<div *ngIf="people">
+  <h2>{{people.firstName | titlecase}} {{people.lastName | uppercase}} Details</h2>
+  <span>n° {{people.badge}}</span>
+  <div>
+    <label for="p-fname">FIRST NAME: </label>
+    <input id="p-fname" [(ngModel)]="people.firstName" placeholder="name">
+  </div>
+  <div>
+    <label for="p-lname">LAST NAME:</label>
+    <input id="p-lname" [(ngModel)]="people.lastName" placeholder="name">
+  </div>
+  <div>
+    <label for="p-squad">SQUAD: </label>
+    <input id="p-squad" [(ngModel)]="people.squad" placeholder="name">
+  </div>
+</div>
