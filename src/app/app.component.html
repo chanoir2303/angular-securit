@@ -1,1 +1,24 @@
-<app-people></app-people>
+<mat-toolbar>
+  <button mat-icon-button class="icon" type="button" (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Securitoz</span>
+  <span class="spacer"></span>
+  <button mat-icon-button class="icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>settings</mat-icon>
+  </button>
+  <button mat-icon-button class="icon">
+    <mat-icon>help</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <app-people></app-people>
+  </div>
+
+</mat-drawer-container>
