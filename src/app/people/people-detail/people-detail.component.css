@@ -17,3 +17,13 @@ iframe {
 mat-divider {
   margin: 1vw;
 }
+
+#card1-controller {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-controller {
+  display: flex;
+  justify-content: space-between;
+}

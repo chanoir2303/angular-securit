@@ -4,18 +4,19 @@
     <mat-card-subtitle>{{people.squad | titlecase}}</mat-card-subtitle>
     <mat-card-content>
       <h2>Details</h2>
-      <span></span>
-      <div>
-        <label for="p-fname">FIRST NAME: </label>
-        <input id="p-fname" [(ngModel)]="people.firstName" placeholder="name">
-      </div>
-      <div>
-        <label for="p-lname">LAST NAME:</label>
-        <input id="p-lname" [(ngModel)]="people.lastName" placeholder="name">
-      </div>
-      <div>
-        <label for="p-squad">SQUAD: </label>
-        <input id="p-squad" [(ngModel)]="people.squad" placeholder="name">
+      <div id="card1-controller">
+        <div class="field-controller">
+          <label for="p-fname">FIRST NAME: </label>
+          <input id="p-fname" [(ngModel)]="people.firstName" placeholder="name">
+        </div>
+        <div class="field-controller">
+          <label for="p-lname">LAST NAME:</label>
+          <input id="p-lname" [(ngModel)]="people.lastName" placeholder="name">
+        </div>
+        <div class="field-controller">
+          <label for="p-squad">SQUAD: </label>
+          <input id="p-squad" [(ngModel)]="people.squad" placeholder="name">
+        </div>
       </div>
     </mat-card-content>
     <mat-card-actions>
