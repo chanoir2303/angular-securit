@@ -6,6 +6,8 @@ import {FormsModule} from "@angular/forms";
 import {MatCardModule} from '@angular/material/card';
 import {PeopleComponent} from "./people-list/people.component";
 import {PeopleDetailComponent} from './people-detail/people-detail.component';
+import {MatDividerModule} from "@angular/material/divider";
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import {PeopleDetailComponent} from './people-detail/people-detail.component';
     MatTableModule,
     MatButtonModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    MatDividerModule,
   ]
 })
 export class PeopleModule { }

@@ -1,5 +1,5 @@
-<div *ngIf="people">
-  <mat-card class="example-card">
+<div *ngIf="people" id="container">
+  <mat-card id="card1">
     <mat-card-title>{{people.firstName | titlecase}} {{people.lastName | uppercase}} n°{{people.badge}}</mat-card-title>
     <mat-card-subtitle>{{people.squad | titlecase}}</mat-card-subtitle>
     <mat-card-content>
@@ -22,6 +22,14 @@
       <button mat-button>PING</button>
       <button mat-button>OFF</button>
     </mat-card-actions>
+  </mat-card>
+  <mat-divider></mat-divider>
+  <mat-card id="card2">
+    <mat-card-content>
+      <h2>{{people.firstName | titlecase}} geolocation</h2>
+      <span></span>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.9366060406974!2d-8.467236784330275!3d51.898620989843906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4844900f4385501f%3A0x1975bdaded10640d!2sClayton%20Hotel%20Cork%20City!5e0!3m2!1sfr!2sie!4v1655589164479!5m2!1sfr!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </mat-card-content>
   </mat-card>
 </div>
 
