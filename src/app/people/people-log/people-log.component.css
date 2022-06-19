@@ -5,6 +5,8 @@ mat-card {
 
 mat-toolbar {
   margin-bottom: 10px;
+  background-color: #38618C;
+  color: whitesmoke;
 }
 
 mat-card-content {

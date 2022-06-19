@@ -26,3 +26,7 @@ form {
 .field-controller {
   width: 10vw;
 }
+
+mat-card-actions {
+  color: #38618C;
+}

@@ -29,11 +29,11 @@
 }
 
 .selected {
-  background-color: black;
+  background-color: #38618C;
   color: white;
 }
 
 .selected:hover {
-  background-color: #505050;
+  background-color: #35A7FF;
   color: white;
 }
