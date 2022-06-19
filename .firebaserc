@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "securit-bd788"
+  },
+  "targets": {
+    "securit-bd788": {
+      "hosting": {
+        "demo": [
+          "securit-bd788"
+        ]
+      }
+    }
   }
 }
