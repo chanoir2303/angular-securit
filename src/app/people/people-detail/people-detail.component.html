@@ -5,18 +5,20 @@
     <mat-card-content>
       <h2>Details</h2>
       <div id="card1-controller">
-        <div class="field-controller">
-          <label for="p-fname">FIRST NAME: </label>
-          <input id="p-fname" [(ngModel)]="people.firstName" placeholder="name">
-        </div>
-        <div class="field-controller">
-          <label for="p-lname">LAST NAME:</label>
-          <input id="p-lname" [(ngModel)]="people.lastName" placeholder="name">
-        </div>
-        <div class="field-controller">
-          <label for="p-squad">SQUAD: </label>
-          <input id="p-squad" [(ngModel)]="people.squad" placeholder="name">
-        </div>
+        <form class="example-form">
+          <mat-form-field class="field-controller" appearance="fill">
+            <mat-label>First name</mat-label>
+            <input matInput value="{{people.firstName}}">
+          </mat-form-field>
+          <mat-form-field class="field-controller" appearance="fill">
+            <mat-label>Last name</mat-label>
+            <input matInput value="{{people.lastName}}">
+          </mat-form-field>
+          <mat-form-field class="field-controller" appearance="fill">
+            <mat-label>Squad</mat-label>
+            <input matInput value="{{people.squad}}">
+          </mat-form-field>
+        </form>
       </div>
     </mat-card-content>
     <mat-card-actions>

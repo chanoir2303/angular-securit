@@ -1,0 +1,14 @@
+mat-card {
+  width: 18vw;
+  height: 75vh;
+}
+
+mat-toolbar {
+  margin-bottom: 10px;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -7,12 +7,17 @@ import {MatCardModule} from '@angular/material/card';
 import {PeopleComponent} from "./people-list/people.component";
 import {PeopleDetailComponent} from './people-detail/people-detail.component';
 import {MatDividerModule} from "@angular/material/divider";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from '@angular/material/input';
+import { PeopleLogComponent } from './people-log/people-log.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 
 @NgModule({
   declarations: [
     PeopleComponent,
-    PeopleDetailComponent
+    PeopleDetailComponent,
+    PeopleLogComponent
   ],
   exports: [
     PeopleComponent,
@@ -25,6 +30,9 @@ import {MatDividerModule} from "@angular/material/divider";
     FormsModule,
     MatCardModule,
     MatDividerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatToolbarModule
   ]
 })
 export class PeopleModule { }

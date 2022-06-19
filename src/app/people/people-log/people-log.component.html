@@ -1,0 +1,13 @@
+<div *ngIf="people">
+  <mat-card id="log-window">
+    <mat-toolbar>
+      {{people.firstName | titlecase}} logs
+    </mat-toolbar>
+    <mat-card-content>
+      <span>2022-06-19_11:06am | {{people.firstName}} is taking a break</span>
+      <span>2022-06-19_11:06am | {{people.firstName}} pong !</span>
+      <span>2022-06-19_11:06am | ping {{people.firstName}}...</span>
+      <span>2022-06-19_11:06am | {{people.firstName}} is {{people.state}}</span>
+    </mat-card-content>
+  </mat-card>
+</div>
