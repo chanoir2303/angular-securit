@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {PEOPLE_LIST} from "../mock-people";
 import {People} from "./people";
+import {Observable} from "rxjs";
+import {AngularFirestore} from "@angular/fire/compat/firestore";
 
 
 @Component({
@@ -10,13 +11,13 @@ import {People} from "./people";
 })
 export class PeopleComponent implements OnInit {
 
-  constructor() { }
+  peopleList: Observable<any[]>;
+  constructor(firestore: AngularFirestore) {
+    this.peopleList = firestore.collection('people').valueChanges();
+  }
 
   ngOnInit(): void {
   }
-
-  // mock-people.ts data
-  peopleList = PEOPLE_LIST;
 
   // MatTableModule
   displayedColumns: string[] = ['badge', 'full-name', 'squad', 'state'];

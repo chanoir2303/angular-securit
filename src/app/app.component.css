@@ -27,3 +27,7 @@ mat-toolbar {
 router-outlet {
   margin-left: 10px;
 }
+
+.text {
+  color: red;
+}
