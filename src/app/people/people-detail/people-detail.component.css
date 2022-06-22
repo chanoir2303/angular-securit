@@ -2,16 +2,17 @@
   display: flex;
   flex-direction: column;
   margin: 2vw;
+  bottom: -30px;
 }
 
 #card1, #card2 {
   width: 32vw;
-  height: 30vh;
+  height: 35vh;
 }
 
 iframe {
   width: 32vw;
-  height: 20vh;
+  height: 29vh;
 }
 
 mat-divider {
