@@ -2,6 +2,10 @@
   display: flex;
 }
 
+table {
+  height: 90vh;
+}
+
 .people-table {
   width: 40vw;
 }
