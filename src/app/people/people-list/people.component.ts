@@ -12,9 +12,11 @@ import {AngularFirestore} from "@angular/fire/compat/firestore";
 export class PeopleComponent implements OnInit {
 
   peopleList: Observable<any[]>;
+
   constructor(firestore: AngularFirestore) {
     this.peopleList = firestore.collection('people').valueChanges();
   }
+
 
   ngOnInit(): void {
   }

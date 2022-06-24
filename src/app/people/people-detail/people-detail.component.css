@@ -46,4 +46,7 @@ iframe {
   margin-right: -16px;
   margin-left: -16px;
   background-color: #38618C;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  opacity: 0.2;
 }
