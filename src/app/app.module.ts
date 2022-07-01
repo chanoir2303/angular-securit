@@ -16,6 +16,8 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import {AuthenticationModule} from "./authentication/authentication.module";
 
 
 @NgModule({
@@ -26,6 +28,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     BrowserModule,
     AppRoutingModule,
     PeopleModule,
+    AuthenticationModule,
     BrowserAnimationsModule,
     MatSidenavModule,
     MatToolbarModule,
@@ -36,7 +39,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
-    provideStorage(() => getStorage())
+    provideStorage(() => getStorage()),
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

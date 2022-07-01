@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SignInComponent } from './sign-in/sign-in.component';
-import { SETTINGS as AUTH_SETTINGS, USE_DEVICE_LANGUAGE, LANGUAGE_CODE, PERSISTENCE } from '@angular/fire/compat/auth';
+import { RegisterComponent } from './register/register.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './verify-email/verify-email.component';
 
 
 @NgModule({
   declarations: [
-    SignInComponent
+    SignInComponent,
+    RegisterComponent,
+    ForgotPasswordComponent,
+    VerifyEmailComponent
   ],
   imports: [
     CommonModule
   ],
-  providers: [
-    { provide: AUTH_SETTINGS, useValue: { appVerificationDisabledForTesting: true } },
-    { provide: USE_DEVICE_LANGUAGE, useValue: true },
-    { provide: LANGUAGE_CODE, useValue: 'fr' },
-    { provide: PERSISTENCE, useValue: 'session' },
-  ]
+  providers: []
 })
 export class AuthenticationModule { }

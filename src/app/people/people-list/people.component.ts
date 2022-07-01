@@ -26,7 +26,7 @@ export class PeopleComponent implements OnInit {
 
   // select a person in table
   selectedPerson?: People;
-  onSelect(people: People): void {
+  onSelect(people: People) {
     this.selectedPerson = people;
   }
 }

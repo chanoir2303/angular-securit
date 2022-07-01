@@ -2,7 +2,7 @@
   <button mat-icon-button class="icon" type="button" (click)="drawer.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>securiT</span>
+  <span>{{title}}</span>
   <span class="spacer"></span>
   <button mat-icon-button class="icon" aria-label="Example icon-button with heart icon">
     <mat-icon>settings</mat-icon>
@@ -17,6 +17,10 @@
     <button mat-button routerLink="team">
       <mat-icon>groups</mat-icon>
       Team Management
+    </button>
+    <button mat-button routerLink="sign">
+      <mat-icon>groups</mat-icon>
+      Sign In
     </button>
   </mat-drawer>
 
